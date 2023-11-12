@@ -2,27 +2,30 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
     <title>Curriculum vitae</title>
 </head>
 
 <body>
-    <div class="encuadre">
+    <div class="encuadre" id="encuadre">
         <!--Menú inicio-->
-        <div class="menu">
-            <div class="logo"></div>
-            <span class="linicio"><a href="index.html">Inicio</a></span>
-            <span class="lestudios"> <a href="estudios.html">Estudios</a></span>
-            <span class="lconocimiento"><a href="conocimientos.html">Conocimientos</a></span>
-            <span class="lexperiencia"><a href="experiencia.html">Experiencia</a></span>
-            <span class="lcompetencias"><a href="competencias.html">Competencias</a></span>
-        </div>
-        <!--Menú fin-->
+        <div class="navbar" id="navbar">
+            <ul>
+                <a  href="index.html">Home</a>
+                <a href="estudios.html">Estudios</a>
+                <a href="conocimientos.html">Conocimientos</a>
+                <a class="active" href="experiencia.html">Experiencia</a>
+            </ul>
+            <a href="#" class="tema" onclick="cambiarTema()">Cambiar tema</a>
+
+        </div>        <!--Menú fin-->
         <!--Perfil inicio-->
-        <div class="perfil">
+        <div class="perfil" id="perfil">
             <img src="images/perfil.png" class="foto">
-            <div class="desperfil">
+            <div class="desperfil" id="desperfil">
                 <span class="perfilnombre">Iván G. Ayala</span>
                 <span class="perfilnacion">Argentino</span>
                 <span class="perfilprofesion">Software Developer</span>
@@ -30,9 +33,9 @@
         </div>
         <!--Perfil fin-->
         <!--Textos inicio-->
-        <div class="textos">
+        <div class="textos" id="textos">
 
-            <div class="detallecv">
+            <div class="detallecv" id="resenia">
                 <span class="txtdetalles" id="ubicacion">
 
                     SNP GROUP <br>
@@ -51,6 +54,23 @@
         </div>
         <!--Textos fin-->
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+
+                    <p class="copyright">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> Derechos Reservados | Trabajo
+                        Práctico
+                        <br>
+                        <img src="images/uade.png" alt="Logo Uade" style="width: 100px; height: auto;" />
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script src="js/eventos.js"></script>
+
 </body>
 
 </html>

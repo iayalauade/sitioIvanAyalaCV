@@ -6,9 +6,9 @@ body {
 }
 
 .encuadre {
-  width: 1440px;
+  width: 100%;
   height: 1024px;
-  background: rgba(207,222,246,1);
+  background: rgba(207, 222, 246,1);
   opacity: 1;
   position: relative;
   top: 0px;
@@ -16,103 +16,88 @@ body {
   overflow: hidden;
 }
 .menu {
-  width: 100%;
+  width: 72%;
   height: 10%;
   background: rgba(20,3,47,1);
   opacity: 1;
   position: sticky;
   top: 0px;
-  left: 0px;
+  left: 27%;
   overflow: hidden;
 }
-.logo {
-  width: 10%;
-  height: 80%;
-  background: url("../images/logo.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: sticky;
-  top: 10%;
-  left: 2%;
-  overflow: hidden;
-}
-.linicio {
-  width: 10%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 30%;
-  left: 12%;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 36px;
-  opacity: 1;
-  text-align: center;
+.navbar {
+  width: 72%;
+  left: 27%;
+  margin-top: 1%;
+  position: fixed;
+  background-color: rgba(16, 31, 164,1);;
+  z-index: 1;
 }
 
-.lestudios {
-  width: 10%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 30%;
-  left: 22%;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 36px;
-  opacity: 1;
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
 }
-.lconocimiento {
-  width: 10%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 30%;
-  left: 34%;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 36px;
-  opacity: 1;
-  text-align: center;
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
 }
-.lexperiencia {
-  width: 10%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 30%;
-  left: 53%;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 36px;
-  opacity: 1;
-  text-align: center;
+
+.navbar a.active {
+  background-color: rgba(75,171,225,1);
+  color: white;
 }
-.lcompetencias {
-  width: 10%;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 30%;
-  left: 68%;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 36px;
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.logo {
+  width: 5px;
+  height: 5px;
   opacity: 1;
+  top: 10%;
+  left: 1%;
+}
+.button {
+  border-radius: 5%;
+  background: rgba(75,171,225,1);
+  color: black;
+  padding: 15px 32px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .perfil {
   width: 25%;
-  height: 82%;
-  background: rgba(19,3,46,1);
+  height: 97%;
+  background: rgba(16, 31, 164,1);
   opacity: 1;
   position: absolute;
-  top: 15%;
-  left: 1%;
-  overflow: hidden;
+  top: 1%;
+  left: 1%;  
 }
 .foto {
   width: 90%;
-  height: 42%;
+  height: 30%;
   background: url("../images/perfil.png");
   opacity: 1;
   position: absolute;
@@ -123,7 +108,7 @@ body {
 .desperfil {
   width: 90%;
   height: 40%;
-  background: rgba(75,171,225,1);
+  background: rgba(162,209,236,1);
   opacity: 1;
   position: absolute;
   top: 58%;
@@ -170,34 +155,36 @@ body {
 .textos {
   width: 72%;
   height: 82%;
-  background: rgba(20,3,47,1);
+  background: rgba(16, 31, 164,1);
   opacity: 1;
   position: absolute;
   top: 15%;
   left: 27%;
   overflow: hidden;
+  border-radius: 5%;
 }
 .resenia {
   width: 98%;
-  height: 25%;
+  height: 98%;
   background: rgba(162,209,236,1);
   opacity: 1;
   position: absolute;
-  top: 2%;
+  top: 1%;
   left: 1%;
   overflow: hidden;
+  border-radius: 5%;
 }
 .txtresenia {
   width: 100%;
   color: rgba(0,0,0,1);
   position: absolute;
-  top: 1%;
+  top: 10%;
   left: 1%;
   font-family: Inter;
   font-weight: Regular;
   font-size: 36px;
   opacity: 1;
-  text-align: left;
+  text-align: center;
 }
 .detalles {
   width: 98%;
@@ -208,8 +195,45 @@ body {
   top: 29%;
   left: 1%;
   overflow: hidden;
+  border-radius: 5%;
 }
 
+.txtubicacion {
+  width: 100%;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  top: 35%;
+  left: 1%;
+  text-align: center;
+}
+.txttrabajo {
+  width: 100%;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  top: 55%;
+  left: 1%;
+  text-align: center;
+}
+.txtidiomas {
+  width: 100%;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 36px;
+  opacity: 1;
+  top: 75%;
+  left: 1%;
+  text-align: center;
+}
 .txtdetalles {
   width: 100%;
   color: rgba(0,0,0,1);
@@ -232,6 +256,70 @@ body {
   top: 1%;
   left: 1%;
   overflow: hidden;
+  text-align: center;
+  border-radius: 5%;
 }
 
+.footer{
+  background-color: black;
+  top: 1%;
+
+}
+
+.copyright{
+  width: 100%;
+  color: white;
+  position: relative;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 20px;
+  opacity: 1;
+  top: 10%;
+  left: 1%;
+  text-align: center;
+
+}
+
+@media only screen and (max-width: 720px) {
+  /* For tablets: */
+  .perfilnombre {font-size: 20px;}
+  .txtdetalles {font-size: 20px;}
+  .copyright {font-size: 20px;}
+  .txttrabajo {font-size: 20px;}
+  .txtubicacion {font-size: 20px;}
+  .txtidiomas {font-size: 20px;}
+  .txtresenia {font-size: 20px;}
+  .perfilnacion {font-size: 20px;}
+  .perfilprofesion {font-size: 20px;}
+
+  .desperfil {width: 90%; height: 30%;}
+  .textos {margin-top: 28%; margin-left: 5%; width: 68%; height: 55%;}
+  .resenia {margin-top: 1%; width: 98%; height: 96%;}
+  .foto {width: 90%; height: 30%;}
+  .perfil {width: 30%; height: 98%;}
+  .navbar {margin-left: 5%; width: 72%; height: 35%;}
+  .encuadre {width: 100%; height: 425px;}
+}
+
+@media only screen and (max-width: 480px) {
+  /* For tablets: */
+  .perfilnombre {font-size: 10px;}
+  .txtdetalles {font-size: 10px;}
+  .copyright {font-size: 10px;}
+  .txttrabajo {font-size: 10px;}
+  .txtubicacion {font-size: 10px;}
+  .txtidiomas {font-size: 10px;}
+  .txtresenia {font-size: 10px;}
+  .perfilnacion {font-size: 10px;}
+  .perfilprofesion {font-size: 10px;}
+
+  .desperfil {width: 90%; height: 30%;}
+  .textos {margin-top: 28%; margin-left: 5%; width: 68%; height: 55%;}
+  .resenia {margin-top: 1%; width: 98%; height: 96%;}
+  .foto {width: 90%; height: 30%;}
+  .perfil {width: 30%; height: 98%;}
+  .navbar {margin-left: 5%; width: 72%; height: 35%;}
+  .encuadre {width: 100%; height: 425px;}
+  
+}
 
